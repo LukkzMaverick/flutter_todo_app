@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_todo/models/task.dart';
 import 'package:flutter_todo/models/task_data.dart';
 import 'package:flutter_todo/widgets/tasks_list.dart';
 import 'add_task_screen.dart';
 import 'package:provider/provider.dart';
+
+import '../widgets/bottom_sheet_fix.dart';
 
 class TasksScreen extends StatelessWidget {
   @override
@@ -13,9 +14,9 @@ class TasksScreen extends StatelessWidget {
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showModalBottomSheet(
+          showModalBottomSheetApp(
+              dismissOnTap: true,
               context: context,
-              isScrollControlled: true,
               builder: (context) => AddTaskScreen());
         },
         backgroundColor: Colors.lightBlueAccent,

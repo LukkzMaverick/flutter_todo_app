@@ -5,6 +5,7 @@ import 'package:flutter_todo/models/task_data.dart';
 
 class TasksList extends StatelessWidget {
   static String _textFieldDialog;
+
   @override
   Widget build(BuildContext context) {
     return Consumer<TaskData>(
