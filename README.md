@@ -4,3 +4,4 @@ An app that lets you create, read, edit and delete items. To delete an item swip
 
 The app uses provider for state management.
 
+Tested in 1.9.1 of Flutter SDK, may break in other versions.
